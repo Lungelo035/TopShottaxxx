@@ -78,6 +78,39 @@
           allowfullscreen>
   </iframe>
 </div>
+<!-- Responsive container using Bootstrap grid -->
+<div class="container">
+  <div class="row" id="feedContainer"></div>
+</div>
+
+<script>
+  // URL of the CSV feed (note: ensure CORS is allowed)
+  const feedUrl = 'https://txxx.com/admin/feeds/embed/?source=835318306&feed_format=csv&screenshot_format=288x162&limit=100&csv_separator=%7C&csv_columns=embed';
+
+  fetch(feedUrl)
+    .then(response => response.text())
+    .then(data => {
+      // Split data into rows (assuming newline-delimited CSV)
+      const lines = data.split('\n');
+      // Remove header (if present). If no header exists, remove this line.
+      lines.shift();
+      const container = document.getElementById('feedContainer');
+      lines.forEach(line => {
+        if (line.trim()) {
+          // CSV columns are separated by pipe ("|")
+          const columns = line.split('|');
+          const embedCode = columns[0]; // assuming the embed code is in the first column
+
+          // Create a responsive column (adjust classes as needed)
+          const colDiv = document.createElement('div');
+          colDiv.className = 'col-12 col-sm-6 col-md-4 col-lg-3 mb-3';
+          colDiv.innerHTML = embedCode;
+          container.appendChild(colDiv);
+        }
+      });
+    })
+    .catch(error => console.error('Error fetching feed:', error));
+</script>
 
   <!-- Main Content (hidden until age verification) -->
   <main class="container d-none" id="mainContent">
@@ -534,5 +567,78 @@
       });
     });
   </script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Auto-close popup ad after 9 seconds
+        setTimeout(() => {
+            const popupAd = document.getElementById('container-f3decab2180b9fe7eecbf1f1cdb63c29');
+            if (popupAd) popupAd.remove();
+        }, 9000);
+
+        // Human-like autoscroll pattern
+        let isScrolling = false;
+        let scrollInterval;
+        let lastScrollPosition = 0;
+
+        function startAutoScroll() {
+            if (isScrolling) return;
+            isScrolling = true;
+
+            scrollInterval = setInterval(() => {
+                const adSections = [
+                    document.querySelector('script[src*="effectiveratecpm"]'),
+                    document.getElementById('container-f3decab2180b9fe7eecbf1f1cdb63c29'),
+                    document.querySelector('.ratio.ratio-16x9')
+                ];
+
+                // Check if any ad section is in view
+                const currentPosition = window.scrollY + window.innerHeight / 2;
+                let nearAd = false;
+
+                adSections.forEach(ad => {
+                    if (ad) {
+                        const rect = ad.getBoundingClientRect();
+                        const adPosition = window.scrollY + rect.top;
+                        if (Math.abs(currentPosition - adPosition) < 500) {
+                            nearAd = true;
+                        }
+                    }
+                });
+
+                if (nearAd) {
+                    // Pause longer on ad sections
+                    window.scrollBy(0, 10);
+                    clearInterval(scrollInterval);
+                    setTimeout(startAutoScroll, 3000 + Math.random() * 2000);
+                } else {
+                    // Random scroll patterns
+                    const scrollAmount = 50 + Math.random() * 100;
+                    const scrollSpeed = 500 + Math.random() * 1000;
+                    
+                    window.scrollBy(0, scrollAmount);
+                    
+                    // Random direction changes
+                    if (Math.random() > 0.7) {
+                        window.scrollBy(0, -scrollAmount * 0.5);
+                    }
+
+                    // Check if reached bottom
+                    if (window.innerHeight + window.scrollY >= document.body.offsetHeight - 500) {
+                        window.scrollTo(0, 0);
+                    }
+
+                    // Random pauses
+                    if (Math.random() > 0.8) {
+                        clearInterval(scrollInterval);
+                        setTimeout(startAutoScroll, 1000 + Math.random() * 2000);
+                    }
+                }
+            }, 500 + Math.random() * 1500);
+        }
+
+        // Start scrolling after initial delay
+        setTimeout(startAutoScroll, 3000);
+    });
+</script>
 </body>
 </html>
