@@ -1,44 +1,54 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="robots" content="noarchive, noindex">
-  <meta name="description" content="Adult content platform restricted to users 18+ in accordance with legal guidelines.">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noarchive, noindex" />
+  <meta name="description" content="Adult content platform restricted to users 18+ in accordance with legal guidelines." />
   <title>TopShottaxxx - Age-Restricted Platform</title>
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
   <style>
-    .legal-disclaimer { 
-      background: #f8f9fa; 
-      padding: 1rem; 
-      margin: 2rem 0; 
+    /* Custom Styles */
+    .legal-disclaimer {
+      background: #f8f9fa;
+      padding: 1rem;
+      margin: 2rem 0;
       border-left: 4px solid #f05454;
     }
-    .placeholder-img { width: 100%; height: 150px; background: #ddd; }
-    .tab-pane { margin-top: 1rem; }
+    .tab-pane {
+      margin-top: 1rem;
+    }
+    .error-msg {
+      color: #dc3545;
+      display: none;
+      margin-top: 0.5rem;
+    }
   </style>
 </head>
 <body>
+  <script type='text/javascript' src='//pl25957094.effectiveratecpm.com/e3/2d/e1/e32de133a36a227ad84b0b2316d1755d.js'></script>
   <!-- Age Verification Modal -->
-  <div class="modal fade" id="ageVerification" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1">
+  <div class="modal fade" id="ageVerification" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="ageVerificationLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <form id="ageForm">
           <div class="modal-header bg-dark text-white">
-            <h5 class="modal-title">18+ Age Verification</h5>
+            <h5 class="modal-title" id="ageVerificationLabel">18+ Age Verification</h5>
           </div>
           <div class="modal-body">
             <p>Confirm you are 18 years or older to enter.</p>
-            <input type="date" class="form-control mb-3" id="dobInput" placeholder="Date of Birth">
+            <input type="date" class="form-control mb-3" id="dobInput" name="dob" required />
             <div class="form-check">
-              <input class="form-check-input" type="checkbox" id="termsCheck">
+              <input class="form-check-input" type="checkbox" id="termsCheck" name="terms" required />
               <label class="form-check-label" for="termsCheck">
-                I have read and agree to the <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a>.
+                I have read and agree to the <a href="terms.html" target="_blank" rel="noopener noreferrer">Terms of Service</a> and <a href="privacy.html" target="_blank" rel="noopener noreferrer">Privacy Policy</a>.
               </label>
             </div>
+            <div id="errorMsg" class="error-msg">You must be 18+ and agree to the terms to access this site.</div>
           </div>
           <div class="modal-footer border-0">
-            <button type="button" class="btn btn-outline-dark" data-bs-dismiss="modal">Exit</button>
+            <button type="button" class="btn btn-outline-dark" id="exitBtn">Exit</button>
             <button type="submit" class="btn btn-dark">Verify Age</button>
           </div>
         </form>
@@ -46,404 +56,480 @@
     </div>
   </div>
 
-  <!-- Header -->
+  <!-- Header Section -->
   <header class="bg-dark text-white text-center py-5">
     <h1 class="display-4">TopShottaxxx</h1>
     <p class="lead">Age-Restricted Adult Content Platform</p>
   </header>
-
+<script async="async" data-cfasync="false" src="//pl25962461.effectiveratecpm.com/f3decab2180b9fe7eecbf1f1cdb63c29/invoke.js"></script>
+<div id="container-f3decab2180b9fe7eecbf1f1cdb63c29"></div>
   <!-- Legal Disclaimer -->
   <div class="container legal-disclaimer">
     <h5>Legal Disclaimer</h5>
-    <p>This platform contains explicit content intended for adults 18+ only. All users must agree to our <a href="terms.html">Terms of Service</a> and <a href="privacy.html">Privacy Policy</a> before proceeding.</p>
+    <p>
+      This platform contains explicit content intended for adults 18+ only. Being a user means you agree to being above the we are not liable for any deception.
+    </p>
   </div>
+<div class="ratio ratio-16x9">
+  <iframe src="https://hdzog.com/embed/71011?source=835318306&autoplay=1" 
+          title="Embedded Video" 
+          frameborder="0" 
+          allow="autoplay; fullscreen" 
+          allowfullscreen>
+  </iframe>
+</div>
 
   <!-- Main Content (hidden until age verification) -->
   <main class="container d-none" id="mainContent">
-    <!-- Navigation Tabs for Categories -->
+    <!-- Navigation Tabs -->
     <ul class="nav nav-tabs" id="categoryTabs" role="tablist">
+      <!-- Hentai Tab -->
       <li class="nav-item" role="presentation">
-        <a class="nav-link active" id="hentai-tab" data-bs-toggle="tab" href="#hentai" role="tab" aria-controls="hentai" aria-selected="true">Hentai</a>
+        <button class="nav-link active" id="hentai-tab" data-bs-toggle="tab" data-bs-target="#hentai" type="button" role="tab" aria-controls="hentai" aria-selected="true">
+          Hentai
+        </button>
       </li>
+      <!-- MILF Tab -->
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="milf-tab" data-bs-toggle="tab" href="#milf" role="tab" aria-controls="milf" aria-selected="false">MILF</a>
+        <button class="nav-link" id="milf-tab" data-bs-toggle="tab" data-bs-target="#milf" type="button" role="tab" aria-controls="milf" aria-selected="false">
+          MILF
+        </button>
       </li>
+      <!-- Lesbian Tab -->
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="lesbian-tab" data-bs-toggle="tab" href="#lesbian" role="tab" aria-controls="lesbian" aria-selected="false">Lesbian</a>
+        <button class="nav-link" id="lesbian-tab" data-bs-toggle="tab" data-bs-target="#lesbian" type="button" role="tab" aria-controls="lesbian" aria-selected="false">
+          Lesbian
+        </button>
       </li>
+      <!-- Anal Tab -->
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="anal-tab" data-bs-toggle="tab" href="#anal" role="tab" aria-controls="anal" aria-selected="false">Anal</a>
+        <button class="nav-link" id="anal-tab" data-bs-toggle="tab" data-bs-target="#anal" type="button" role="tab" aria-controls="anal" aria-selected="false">
+          Anal
+        </button>
       </li>
+      <!-- Gay Tab -->
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="gay-tab" data-bs-toggle="tab" href="#gay" role="tab" aria-controls="gay" aria-selected="false">Gay</a>
+        <button class="nav-link" id="gay-tab" data-bs-toggle="tab" data-bs-target="#gay" type="button" role="tab" aria-controls="gay" aria-selected="false">
+          Gay
+        </button>
       </li>
+      <!-- Trans Tab -->
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="trans-tab" data-bs-toggle="tab" href="#trans" role="tab" aria-controls="trans" aria-selected="false">Trans</a>
+        <button class="nav-link" id="trans-tab" data-bs-toggle="tab" data-bs-target="#trans" type="button" role="tab" aria-controls="trans" aria-selected="false">
+          Trans
+        </button>
       </li>
+      <!-- BBW Tab -->
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="bbw-tab" data-bs-toggle="tab" href="#bbw" role="tab" aria-controls="bbw" aria-selected="false">BBW</a>
+        <button class="nav-link" id="bbw-tab" data-bs-toggle="tab" data-bs-target="#bbw" type="button" role="tab" aria-controls="bbw" aria-selected="false">
+          BBW
+        </button>
       </li>
+      <!-- Threesome Tab -->
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="threesome-tab" data-bs-toggle="tab" href="#threesome" role="tab" aria-controls="threesome" aria-selected="false">Threesome</a>
+        <button class="nav-link" id="threesome-tab" data-bs-toggle="tab" data-bs-target="#threesome" type="button" role="tab" aria-controls="threesome" aria-selected="false">
+          Threesome
+        </button>
       </li>
+      <!-- Orgasm Tab -->
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="orgasm-tab" data-bs-toggle="tab" href="#orgasm" role="tab" aria-controls="orgasm" aria-selected="false">Orgasm</a>
+        <button class="nav-link" id="orgasm-tab" data-bs-toggle="tab" data-bs-target="#orgasm" type="button" role="tab" aria-controls="orgasm" aria-selected="false">
+          Orgasm
+        </button>
       </li>
+      <!-- Amateur Tab -->
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="amateur-tab" data-bs-toggle="tab" href="#amateur" role="tab" aria-controls="amateur" aria-selected="false">Amateur</a>
+        <button class="nav-link" id="amateur-tab" data-bs-toggle="tab" data-bs-target="#amateur" type="button" role="tab" aria-controls="amateur" aria-selected="false">
+          Amateur
+        </button>
       </li>
-      <!-- New Tab for South African Sites -->
+      <!-- SA Porn Tab -->
       <li class="nav-item" role="presentation">
-        <a class="nav-link" id="saporn-tab" data-bs-toggle="tab" href="#saporn" role="tab" aria-controls="saporn" aria-selected="false">SA Porn</a>
+        <button class="nav-link" id="saporn-tab" data-bs-toggle="tab" data-bs-target="#saporn" type="button" role="tab" aria-controls="saporn" aria-selected="false">
+          SA Porn
+        </button>
       </li>
     </ul>
 
-    <!-- Tab Content -->
+    <!-- Tab Content Panels -->
     <div class="tab-content" id="categoryTabsContent">
-      <!-- Hentai Tab -->
+      <!-- Hentai Tab Content -->
       <div class="tab-pane fade show active" id="hentai" role="tabpanel" aria-labelledby="hentai-tab">
         <h2 class="mt-3">Hentai - Top 10 Websites</h2>
         <ol>
-          <li><a href="https://www.fakku.net/" target="_blank">Fakku</a></li>
-          <li><a href="https://nhentai.net/" target="_blank">nhentai</a></li>
-          <li><a href="https://hentaihaven.org/" target="_blank">Hentai Haven</a></li>
-          <li><a href="https://www.hentai-foundry.com/" target="_blank">Hentai Foundry</a></li>
-          <li><a href="https://hentaikiss.com/" target="_blank">Hentai Kiss</a></li>
-          <li><a href="https://hentai2read.com/" target="_blank">Hentai2Read</a></li>
-          <li><a href="https://e-hentai.org/" target="_blank">E-Hentai</a></li>
-          <li><a href="https://hanime.tv/" target="_blank">Hanime</a></li>
-          <li><a href="https://mangadex.org/" target="_blank">MangaDex</a></li>
-          <li><a href="https://www.doujinshi.org/" target="_blank">Doujinshi.org</a></li>
+          <li><a href="https://www.fakku.net/" target="_blank" rel="noopener noreferrer">Fakku</a></li>
+          <li><a href="https://nhentai.net/" target="_blank" rel="noopener noreferrer">nhentai</a></li>
+          <li><a href="https://hentaihaven.org/" target="_blank" rel="noopener noreferrer">Hentai Haven</a></li>
+          <li><a href="https://www.hentai-foundry.com/" target="_blank" rel="noopener noreferrer">Hentai Foundry</a></li>
+          <li><a href="https://hentaikiss.com/" target="_blank" rel="noopener noreferrer">Hentai Kiss</a></li>
+          <li><a href="https://hentai2read.com/" target="_blank" rel="noopener noreferrer">Hentai2Read</a></li>
+          <li><a href="https://e-hentai.org/" target="_blank" rel="noopener noreferrer">E-Hentai</a></li>
+          <li><a href="https://hanime.tv/" target="_blank" rel="noopener noreferrer">Hanime</a></li>
+          <li><a href="https://mangadex.org/" target="_blank" rel="noopener noreferrer">MangaDex</a></li>
+          <li><a href="https://www.doujinshi.org/" target="_blank" rel="noopener noreferrer">Doujinshi.org</a></li>
         </ol>
         <h2>Hentai - Top 10 Videos</h2>
         <ol>
-          <li><a href="https://www.pornhub.com/categories/hentai" target="_blank">Pornhub Hentai</a></li>
-          <li><a href="https://www.redtube.com/search/hentai" target="_blank">Redtube Hentai</a></li>
-          <li><a href="https://www.xvideos.com/tags/hentai" target="_blank">XVideos Hentai</a></li>
-          <li><a href="https://www.youporn.com/tags/hentai/" target="_blank">YouPorn Hentai</a></li>
-          <li><a href="https://www.spankbang.com/tags/hentai" target="_blank">SpankBang Hentai</a></li>
-          <li><a href="https://www.tnaflix.com/tags/hentai" target="_blank">Tnaflix Hentai</a></li>
-          <li><a href="https://www.porn.com/search/hentai" target="_blank">Porn.com Hentai</a></li>
-          <li><a href="https://www.xtube.com/videos/tag/hentai" target="_blank">XTube Hentai</a></li>
-          <li><a href="https://www.pornhd.com/categories/hentai" target="_blank">PornHD Hentai</a></li>
-          <li><a href="https://www.xhamster.com/tags/hentai" target="_blank">xHamster Hentai</a></li>
+          <li><a href="https://www.pornhub.com/categories/hentai" target="_blank" rel="noopener noreferrer">Pornhub Hentai</a></li>
+          <li><a href="https://www.redtube.com/search/hentai" target="_blank" rel="noopener noreferrer">Redtube Hentai</a></li>
+          <li><a href="https://www.xvideos.com/tags/hentai" target="_blank" rel="noopener noreferrer">XVideos Hentai</a></li>
+          <li><a href="https://www.youporn.com/tags/hentai/" target="_blank" rel="noopener noreferrer">YouPorn Hentai</a></li>
+          <li><a href="https://www.spankbang.com/tags/hentai" target="_blank" rel="noopener noreferrer">SpankBang Hentai</a></li>
+          <li><a href="https://www.tnaflix.com/tags/hentai" target="_blank" rel="noopener noreferrer">Tnaflix Hentai</a></li>
+          <li><a href="https://www.porn.com/search/hentai" target="_blank" rel="noopener noreferrer">Porn.com Hentai</a></li>
+          <li><a href="https://www.xtube.com/videos/tag/hentai" target="_blank" rel="noopener noreferrer">XTube Hentai</a></li>
+          <li><a href="https://www.pornhd.com/categories/hentai" target="_blank" rel="noopener noreferrer">PornHD Hentai</a></li>
+          <li><a href="https://www.xhamster.com/tags/hentai" target="_blank" rel="noopener noreferrer">xHamster Hentai</a></li>
         </ol>
       </div>
-      <!-- MILF Tab -->
+
+      <!-- MILF Tab Content -->
       <div class="tab-pane fade" id="milf" role="tabpanel" aria-labelledby="milf-tab">
         <h2 class="mt-3">MILF - Top 10 Websites</h2>
         <ol>
-          <li><a href="https://www.milfbangers.com/" target="_blank">MILF Bangers</a></li>
-          <li><a href="https://www.milfmansion.com/" target="_blank">MILF Mansion</a></li>
-          <li><a href="https://www.milfpass.com/" target="_blank">MILF Pass</a></li>
-          <li><a href="https://www.milfparadise.com/" target="_blank">MILF Paradise</a></li>
-          <li><a href="https://www.milfhq.com/" target="_blank">MILF HQ</a></li>
-          <li><a href="https://www.milfworld.com/" target="_blank">MILF World</a></li>
-          <li><a href="https://www.milfcentral.com/" target="_blank">MILF Central</a></li>
-          <li><a href="https://www.milfempire.com/" target="_blank">MILF Empire</a></li>
-          <li><a href="https://www.milfnow.com/" target="_blank">MILF Now</a></li>
-          <li><a href="https://www.milfheaven.com/" target="_blank">MILF Heaven</a></li>
+          <li><a href="https://www.milfbangers.com/" target="_blank" rel="noopener noreferrer">MILF Bangers</a></li>
+          <li><a href="https://www.milfmansion.com/" target="_blank" rel="noopener noreferrer">MILF Mansion</a></li>
+          <li><a href="https://www.milfpass.com/" target="_blank" rel="noopener noreferrer">MILF Pass</a></li>
+          <li><a href="https://www.milfparadise.com/" target="_blank" rel="noopener noreferrer">MILF Paradise</a></li>
+          <li><a href="https://www.milfhq.com/" target="_blank" rel="noopener noreferrer">MILF HQ</a></li>
+          <li><a href="https://www.milfworld.com/" target="_blank" rel="noopener noreferrer">MILF World</a></li>
+          <li><a href="https://www.milfcentral.com/" target="_blank" rel="noopener noreferrer">MILF Central</a></li>
+          <li><a href="https://www.milfempire.com/" target="_blank" rel="noopener noreferrer">MILF Empire</a></li>
+          <li><a href="https://www.milfnow.com/" target="_blank" rel="noopener noreferrer">MILF Now</a></li>
+          <li><a href="https://www.milfheaven.com/" target="_blank" rel="noopener noreferrer">MILF Heaven</a></li>
         </ol>
         <h2>MILF - Top 10 Videos</h2>
         <ol>
-          <li><a href="https://www.pornhub.com/categories/milf" target="_blank">Pornhub MILF</a></li>
-          <li><a href="https://www.xvideos.com/tags/milf" target="_blank">XVideos MILF</a></li>
-          <li><a href="https://www.youporn.com/tags/milf/" target="_blank">YouPorn MILF</a></li>
-          <li><a href="https://www.redtube.com/search/milf" target="_blank">Redtube MILF</a></li>
-          <li><a href="https://www.spankbang.com/tags/milf" target="_blank">SpankBang MILF</a></li>
-          <li><a href="https://www.tnaflix.com/tags/milf" target="_blank">Tnaflix MILF</a></li>
-          <li><a href="https://www.porn.com/search/milf" target="_blank">Porn.com MILF</a></li>
-          <li><a href="https://www.xhamster.com/tags/milf" target="_blank">xHamster MILF</a></li>
-          <li><a href="https://www.pornhd.com/categories/milf" target="_blank">PornHD MILF</a></li>
-          <li><a href="https://www.tube8.com/search/milf" target="_blank">Tube8 MILF</a></li>
+          <li><a href="https://www.pornhub.com/categories/milf" target="_blank" rel="noopener noreferrer">Pornhub MILF</a></li>
+          <li><a href="https://www.xvideos.com/tags/milf" target="_blank" rel="noopener noreferrer">XVideos MILF</a></li>
+          <li><a href="https://www.youporn.com/tags/milf/" target="_blank" rel="noopener noreferrer">YouPorn MILF</a></li>
+          <li><a href="https://www.redtube.com/search/milf" target="_blank" rel="noopener noreferrer">Redtube MILF</a></li>
+          <li><a href="https://www.spankbang.com/tags/milf" target="_blank" rel="noopener noreferrer">SpankBang MILF</a></li>
+          <li><a href="https://www.tnaflix.com/tags/milf" target="_blank" rel="noopener noreferrer">Tnaflix MILF</a></li>
+          <li><a href="https://www.porn.com/search/milf" target="_blank" rel="noopener noreferrer">Porn.com MILF</a></li>
+          <li><a href="https://www.xhamster.com/tags/milf" target="_blank" rel="noopener noreferrer">xHamster MILF</a></li>
+          <li><a href="https://www.pornhd.com/categories/milf" target="_blank" rel="noopener noreferrer">PornHD MILF</a></li>
+          <li><a href="https://www.tube8.com/search/milf" target="_blank" rel="noopener noreferrer">Tube8 MILF</a></li>
         </ol>
       </div>
-      <!-- Lesbian Tab -->
+
+      <!-- Lesbian Tab Content -->
       <div class="tab-pane fade" id="lesbian" role="tabpanel" aria-labelledby="lesbian-tab">
         <h2 class="mt-3">Lesbian - Top 10 Websites</h2>
         <ol>
-          <li><a href="https://www.lesbianpass.com/" target="_blank">Lesbian Pass</a></li>
-          <li><a href="https://www.lesbianworld.com/" target="_blank">Lesbian World</a></li>
-          <li><a href="https://www.lesbianxxx.com/" target="_blank">LesbianXXX</a></li>
-          <li><a href="https://www.lesbianbangers.com/" target="_blank">Lesbian Bangers</a></li>
-          <li><a href="https://www.onlylesbians.com/" target="_blank">OnlyLesbians</a></li>
-          <li><a href="https://www.lesbian-erotica.com/" target="_blank">Lesbian Erotica</a></li>
-          <li><a href="https://www.lesbianarchive.com/" target="_blank">Lesbian Archive</a></li>
-          <li><a href="https://www.lesbiannetwork.com/" target="_blank">Lesbian Network</a></li>
-          <li><a href="https://www.lesbiandiaries.com/" target="_blank">Lesbian Diaries</a></li>
-          <li><a href="https://www.lesbianlounge.com/" target="_blank">Lesbian Lounge</a></li>
+          <li><a href="https://www.lesbianpass.com/" target="_blank" rel="noopener noreferrer">Lesbian Pass</a></li>
+          <li><a href="https://www.lesbianworld.com/" target="_blank" rel="noopener noreferrer">Lesbian World</a></li>
+          <li><a href="https://www.lesbianxxx.com/" target="_blank" rel="noopener noreferrer">LesbianXXX</a></li>
+          <li><a href="https://www.lesbianbangers.com/" target="_blank" rel="noopener noreferrer">Lesbian Bangers</a></li>
+          <li><a href="https://www.onlylesbians.com/" target="_blank" rel="noopener noreferrer">OnlyLesbians</a></li>
+          <li><a href="https://www.lesbian-erotica.com/" target="_blank" rel="noopener noreferrer">Lesbian Erotica</a></li>
+          <li><a href="https://www.lesbianarchive.com/" target="_blank" rel="noopener noreferrer">Lesbian Archive</a></li>
+          <li><a href="https://www.lesbiannetwork.com/" target="_blank" rel="noopener noreferrer">Lesbian Network</a></li>
+          <li><a href="https://www.lesbiandiaries.com/" target="_blank" rel="noopener noreferrer">Lesbian Diaries</a></li>
+          <li><a href="https://www.lesbianlounge.com/" target="_blank" rel="noopener noreferrer">Lesbian Lounge</a></li>
         </ol>
         <h2>Lesbian - Top 10 Videos</h2>
         <ol>
-          <li><a href="https://www.pornhub.com/categories/lesbian" target="_blank">Pornhub Lesbian</a></li>
-          <li><a href="https://www.youporn.com/tags/lesbian/" target="_blank">YouPorn Lesbian</a></li>
-          <li><a href="https://www.xvideos.com/tags/lesbian" target="_blank">XVideos Lesbian</a></li>
-          <li><a href="https://www.redtube.com/search/lesbian" target="_blank">Redtube Lesbian</a></li>
-          <li><a href="https://www.spankbang.com/tags/lesbian" target="_blank">SpankBang Lesbian</a></li>
-          <li><a href="https://www.tnaflix.com/tags/lesbian" target="_blank">Tnaflix Lesbian</a></li>
-          <li><a href="https://www.porn.com/search/lesbian" target="_blank">Porn.com Lesbian</a></li>
-          <li><a href="https://www.xhamster.com/tags/lesbian" target="_blank">xHamster Lesbian</a></li>
-          <li><a href="https://www.pornhd.com/categories/lesbian" target="_blank">PornHD Lesbian</a></li>
-          <li><a href="https://www.tube8.com/search/lesbian" target="_blank">Tube8 Lesbian</a></li>
+          <li><a href="https://www.pornhub.com/categories/lesbian" target="_blank" rel="noopener noreferrer">Pornhub Lesbian</a></li>
+          <li><a href="https://www.youporn.com/tags/lesbian/" target="_blank" rel="noopener noreferrer">YouPorn Lesbian</a></li>
+          <li><a href="https://www.xvideos.com/tags/lesbian" target="_blank" rel="noopener noreferrer">XVideos Lesbian</a></li>
+          <li><a href="https://www.redtube.com/search/lesbian" target="_blank" rel="noopener noreferrer">Redtube Lesbian</a></li>
+          <li><a href="https://www.spankbang.com/tags/lesbian" target="_blank" rel="noopener noreferrer">SpankBang Lesbian</a></li>
+          <li><a href="https://www.tnaflix.com/tags/lesbian" target="_blank" rel="noopener noreferrer">Tnaflix Lesbian</a></li>
+          <li><a href="https://www.porn.com/search/lesbian" target="_blank" rel="noopener noreferrer">Porn.com Lesbian</a></li>
+          <li><a href="https://www.xhamster.com/tags/lesbian" target="_blank" rel="noopener noreferrer">xHamster Lesbian</a></li>
+          <li><a href="https://www.pornhd.com/categories/lesbian" target="_blank" rel="noopener noreferrer">PornHD Lesbian</a></li>
+          <li><a href="https://www.tube8.com/search/lesbian" target="_blank" rel="noopener noreferrer">Tube8 Lesbian</a></li>
         </ol>
       </div>
-      <!-- Anal Tab -->
+
+      <!-- Anal Tab Content -->
       <div class="tab-pane fade" id="anal" role="tabpanel" aria-labelledby="anal-tab">
         <h2 class="mt-3">Anal - Top 10 Websites</h2>
         <ol>
-          <li><a href="https://www.analbangers.com/" target="_blank">Anal Bangers</a></li>
-          <li><a href="https://www.analpass.com/" target="_blank">Anal Pass</a></li>
-          <li><a href="https://www.analworld.com/" target="_blank">Anal World</a></li>
-          <li><a href="https://www.analaddicts.com/" target="_blank">Anal Addicts</a></li>
-          <li><a href="https://www.analpleasure.com/" target="_blank">Anal Pleasure</a></li>
-          <li><a href="https://www.anallust.com/" target="_blank">Anal Lust</a></li>
-          <li><a href="https://www.analdelight.com/" target="_blank">Anal Delight</a></li>
-          <li><a href="https://www.analecstasy.com/" target="_blank">Anal Ecstasy</a></li>
-          <li><a href="https://www.analempire.com/" target="_blank">Anal Empire</a></li>
-          <li><a href="https://www.theanalroom.com/" target="_blank">The Anal Room</a></li>
+          <li><a href="https://www.analbangers.com/" target="_blank" rel="noopener noreferrer">Anal Bangers</a></li>
+          <li><a href="https://www.analpass.com/" target="_blank" rel="noopener noreferrer">Anal Pass</a></li>
+          <li><a href="https://www.analworld.com/" target="_blank" rel="noopener noreferrer">Anal World</a></li>
+          <li><a href="https://www.analaddicts.com/" target="_blank" rel="noopener noreferrer">Anal Addicts</a></li>
+          <li><a href="https://www.analpleasure.com/" target="_blank" rel="noopener noreferrer">Anal Pleasure</a></li>
+          <li><a href="https://www.anallust.com/" target="_blank" rel="noopener noreferrer">Anal Lust</a></li>
+          <li><a href="https://www.analdelight.com/" target="_blank" rel="noopener noreferrer">Anal Delight</a></li>
+          <li><a href="https://www.analecstasy.com/" target="_blank" rel="noopener noreferrer">Anal Ecstasy</a></li>
+          <li><a href="https://www.analempire.com/" target="_blank" rel="noopener noreferrer">Anal Empire</a></li>
+          <li><a href="https://www.theanalroom.com/" target="_blank" rel="noopener noreferrer">The Anal Room</a></li>
         </ol>
         <h2>Anal - Top 10 Videos</h2>
         <ol>
-          <li><a href="https://www.pornhub.com/categories/anal" target="_blank">Pornhub Anal</a></li>
-          <li><a href="https://www.xvideos.com/tags/anal" target="_blank">XVideos Anal</a></li>
-          <li><a href="https://www.youporn.com/tags/anal/" target="_blank">YouPorn Anal</a></li>
-          <li><a href="https://www.redtube.com/search/anal" target="_blank">Redtube Anal</a></li>
-          <li><a href="https://www.spankbang.com/tags/anal" target="_blank">SpankBang Anal</a></li>
-          <li><a href="https://www.tnaflix.com/tags/anal" target="_blank">Tnaflix Anal</a></li>
-          <li><a href="https://www.porn.com/search/anal" target="_blank">Porn.com Anal</a></li>
-          <li><a href="https://www.xhamster.com/tags/anal" target="_blank">xHamster Anal</a></li>
-          <li><a href="https://www.pornhd.com/categories/anal" target="_blank">PornHD Anal</a></li>
-          <li><a href="https://www.tube8.com/search/anal" target="_blank">Tube8 Anal</a></li>
+          <li><a href="https://www.pornhub.com/categories/anal" target="_blank" rel="noopener noreferrer">Pornhub Anal</a></li>
+          <li><a href="https://www.xvideos.com/tags/anal" target="_blank" rel="noopener noreferrer">XVideos Anal</a></li>
+          <li><a href="https://www.youporn.com/tags/anal/" target="_blank" rel="noopener noreferrer">YouPorn Anal</a></li>
+          <li><a href="https://www.redtube.com/search/anal" target="_blank" rel="noopener noreferrer">Redtube Anal</a></li>
+          <li><a href="https://www.spankbang.com/tags/anal" target="_blank" rel="noopener noreferrer">SpankBang Anal</a></li>
+          <li><a href="https://www.tnaflix.com/tags/anal" target="_blank" rel="noopener noreferrer">Tnaflix Anal</a></li>
+          <li><a href="https://www.porn.com/search/anal" target="_blank" rel="noopener noreferrer">Porn.com Anal</a></li>
+          <li><a href="https://www.xhamster.com/tags/anal" target="_blank" rel="noopener noreferrer">xHamster Anal</a></li>
+          <li><a href="https://www.pornhd.com/categories/anal" target="_blank" rel="noopener noreferrer">PornHD Anal</a></li>
+          <li><a href="https://www.tube8.com/search/anal" target="_blank" rel="noopener noreferrer">Tube8 Anal</a></li>
         </ol>
       </div>
-      <!-- Gay Tab -->
+
+      <!-- Gay Tab Content -->
       <div class="tab-pane fade" id="gay" role="tabpanel" aria-labelledby="gay-tab">
         <h2 class="mt-3">Gay - Top 10 Websites</h2>
         <ol>
-          <li><a href="https://www.gaytube.com/" target="_blank">GayTube</a></li>
-          <li><a href="https://www.men.com/" target="_blank">Men.com</a></li>
-          <li><a href="https://www.gaypass.com/" target="_blank">GayPass</a></li>
-          <li><a href="https://www.gayworld.com/" target="_blank">GayWorld</a></li>
-          <li><a href="https://www.hotgaytube.com/" target="_blank">HotGayTube</a></li>
-          <li><a href="https://www.gayflicks.com/" target="_blank">GayFlicks</a></li>
-          <li><a href="https://www.outtube.com/" target="_blank">OutTube</a></li>
-          <li><a href="https://www.topgayporn.com/" target="_blank">TopGayPorn</a></li>
-          <li><a href="https://www.gayvids.com/" target="_blank">GayVids</a></li>
-          <li><a href="https://www.gayscene.com/" target="_blank">GayScene</a></li>
+          <li><a href="https://www.gaytube.com/" target="_blank" rel="noopener noreferrer">GayTube</a></li>
+          <li><a href="https://www.men.com/" target="_blank" rel="noopener noreferrer">Men.com</a></li>
+          <li><a href="https://www.gaypass.com/" target="_blank" rel="noopener noreferrer">GayPass</a></li>
+          <li><a href="https://www.gayworld.com/" target="_blank" rel="noopener noreferrer">GayWorld</a></li>
+          <li><a href="https://www.hotgaytube.com/" target="_blank" rel="noopener noreferrer">HotGayTube</a></li>
+          <li><a href="https://www.gayflicks.com/" target="_blank" rel="noopener noreferrer">GayFlicks</a></li>
+          <li><a href="https://www.outtube.com/" target="_blank" rel="noopener noreferrer">OutTube</a></li>
+          <li><a href="https://www.topgayporn.com/" target="_blank" rel="noopener noreferrer">TopGayPorn</a></li>
+          <li><a href="https://www.gayvids.com/" target="_blank" rel="noopener noreferrer">GayVids</a></li>
+          <li><a href="https://www.gayscene.com/" target="_blank" rel="noopener noreferrer">GayScene</a></li>
         </ol>
         <h2>Gay - Top 10 Videos</h2>
         <ol>
-          <li><a href="https://www.pornhub.com/categories/gay" target="_blank">Pornhub Gay</a></li>
-          <li><a href="https://www.xvideos.com/tags/gay" target="_blank">XVideos Gay</a></li>
-          <li><a href="https://www.youporn.com/tags/gay/" target="_blank">YouPorn Gay</a></li>
-          <li><a href="https://www.redtube.com/search/gay" target="_blank">Redtube Gay</a></li>
-          <li><a href="https://www.spankbang.com/tags/gay" target="_blank">SpankBang Gay</a></li>
-          <li><a href="https://www.tnaflix.com/tags/gay" target="_blank">Tnaflix Gay</a></li>
-          <li><a href="https://www.porn.com/search/gay" target="_blank">Porn.com Gay</a></li>
-          <li><a href="https://www.xhamster.com/tags/gay" target="_blank">xHamster Gay</a></li>
-          <li><a href="https://www.pornhd.com/categories/gay" target="_blank">PornHD Gay</a></li>
-          <li><a href="https://www.tube8.com/search/gay" target="_blank">Tube8 Gay</a></li>
+          <li><a href="https://www.pornhub.com/categories/gay" target="_blank" rel="noopener noreferrer">Pornhub Gay</a></li>
+          <li><a href="https://www.xvideos.com/tags/gay" target="_blank" rel="noopener noreferrer">XVideos Gay</a></li>
+          <li><a href="https://www.youporn.com/tags/gay/" target="_blank" rel="noopener noreferrer">YouPorn Gay</a></li>
+          <li><a href="https://www.redtube.com/search/gay" target="_blank" rel="noopener noreferrer">Redtube Gay</a></li>
+          <li><a href="https://www.spankbang.com/tags/gay" target="_blank" rel="noopener noreferrer">SpankBang Gay</a></li>
+          <li><a href="https://www.tnaflix.com/tags/gay" target="_blank" rel="noopener noreferrer">Tnaflix Gay</a></li>
+          <li><a href="https://www.porn.com/search/gay" target="_blank" rel="noopener noreferrer">Porn.com Gay</a></li>
+          <li><a href="https://www.xhamster.com/tags/gay" target="_blank" rel="noopener noreferrer">xHamster Gay</a></li>
+          <li><a href="https://www.pornhd.com/categories/gay" target="_blank" rel="noopener noreferrer">PornHD Gay</a></li>
+          <li><a href="https://www.tube8.com/search/gay" target="_blank" rel="noopener noreferrer">Tube8 Gay</a></li>
         </ol>
       </div>
-      <!-- Trans Tab -->
+
+      <!-- Trans Tab Content -->
       <div class="tab-pane fade" id="trans" role="tabpanel" aria-labelledby="trans-tab">
         <h2 class="mt-3">Trans - Top 10 Websites</h2>
         <ol>
-          <li><a href="https://www.transangels.com/" target="_blank">TransAngels</a></li>
-          <li><a href="https://www.transpass.com/" target="_blank">TransPass</a></li>
-          <li><a href="https://www.transheaven.com/" target="_blank">TransHeaven</a></li>
-          <li><a href="https://www.transworldxxx.com/" target="_blank">TransWorldXXX</a></li>
-          <li><a href="https://www.transaddicts.com/" target="_blank">TransAddicts</a></li>
-          <li><a href="https://www.transbangers.com/" target="_blank">TransBangers</a></li>
-          <li><a href="https://www.translust.com/" target="_blank">TransLust</a></li>
-          <li><a href="https://www.transfetish.com/" target="_blank">TransFetish</a></li>
-          <li><a href="https://www.transerotica.com/" target="_blank">TransErotica</a></li>
-          <li><a href="https://www.toptransporn.com/" target="_blank">TopTransPorn</a></li>
+          <li><a href="https://www.transangels.com/" target="_blank" rel="noopener noreferrer">TransAngels</a></li>
+          <li><a href="https://www.transpass.com/" target="_blank" rel="noopener noreferrer">TransPass</a></li>
+          <li><a href="https://www.transheaven.com/" target="_blank" rel="noopener noreferrer">TransHeaven</a></li>
+          <li><a href="https://www.transworldxxx.com/" target="_blank" rel="noopener noreferrer">TransWorldXXX</a></li>
+          <li><a href="https://www.transaddicts.com/" target="_blank" rel="noopener noreferrer">TransAddicts</a></li>
+          <li><a href="https://www.transbangers.com/" target="_blank" rel="noopener noreferrer">TransBangers</a></li>
+          <li><a href="https://www.translust.com/" target="_blank" rel="noopener noreferrer">TransLust</a></li>
+          <li><a href="https://www.transfetish.com/" target="_blank" rel="noopener noreferrer">TransFetish</a></li>
+          <li><a href="https://www.transerotica.com/" target="_blank" rel="noopener noreferrer">TransErotica</a></li>
+          <li><a href="https://www.toptransporn.com/" target="_blank" rel="noopener noreferrer">TopTransPorn</a></li>
         </ol>
         <h2>Trans - Top 10 Videos</h2>
         <ol>
-          <li><a href="https://www.pornhub.com/categories/trans" target="_blank">Pornhub Trans</a></li>
-          <li><a href="https://www.xvideos.com/tags/trans" target="_blank">XVideos Trans</a></li>
-          <li><a href="https://www.youporn.com/tags/trans/" target="_blank">YouPorn Trans</a></li>
-          <li><a href="https://www.redtube.com/search/trans" target="_blank">Redtube Trans</a></li>
-          <li><a href="https://www.spankbang.com/tags/trans" target="_blank">SpankBang Trans</a></li>
-          <li><a href="https://www.tnaflix.com/tags/trans" target="_blank">Tnaflix Trans</a></li>
-          <li><a href="https://www.porn.com/search/trans" target="_blank">Porn.com Trans</a></li>
-          <li><a href="https://www.xhamster.com/tags/trans" target="_blank">xHamster Trans</a></li>
-          <li><a href="https://www.pornhd.com/categories/trans" target="_blank">PornHD Trans</a></li>
-          <li><a href="https://www.tube8.com/search/trans" target="_blank">Tube8 Trans</a></li>
+          <li><a href="https://www.pornhub.com/categories/trans" target="_blank" rel="noopener noreferrer">Pornhub Trans</a></li>
+          <li><a href="https://www.xvideos.com/tags/trans" target="_blank" rel="noopener noreferrer">XVideos Trans</a></li>
+          <li><a href="https://www.youporn.com/tags/trans/" target="_blank" rel="noopener noreferrer">YouPorn Trans</a></li>
+          <li><a href="https://www.redtube.com/search/trans" target="_blank" rel="noopener noreferrer">Redtube Trans</a></li>
+          <li><a href="https://www.spankbang.com/tags/trans" target="_blank" rel="noopener noreferrer">SpankBang Trans</a></li>
+          <li><a href="https://www.tnaflix.com/tags/trans" target="_blank" rel="noopener noreferrer">Tnaflix Trans</a></li>
+          <li><a href="https://www.porn.com/search/trans" target="_blank" rel="noopener noreferrer">Porn.com Trans</a></li>
+          <li><a href="https://www.xhamster.com/tags/trans" target="_blank" rel="noopener noreferrer">xHamster Trans</a></li>
+          <li><a href="https://www.pornhd.com/categories/trans" target="_blank" rel="noopener noreferrer">PornHD Trans</a></li>
+          <li><a href="https://www.tube8.com/search/trans" target="_blank" rel="noopener noreferrer">Tube8 Trans</a></li>
         </ol>
       </div>
-      <!-- BBW Tab -->
+
+      <!-- BBW Tab Content -->
       <div class="tab-pane fade" id="bbw" role="tabpanel" aria-labelledby="bbw-tab">
         <h2 class="mt-3">BBW - Top 10 Websites</h2>
         <ol>
-          <li><a href="https://www.bbwseduction.com/" target="_blank">BBW Seduction</a></li>
-          <li><a href="https://www.bbwallure.com/" target="_blank">BBW Allure</a></li>
-          <li><a href="https://www.bbwfantasy.com/" target="_blank">BBW Fantasy</a></li>
-          <li><a href="https://www.bbwheaven.com/" target="_blank">BBW Heaven</a></li>
-          <li><a href="https://www.bbwcharm.com/" target="_blank">BBW Charm</a></li>
-          <li><a href="https://www.bbwpassion.com/" target="_blank">BBW Passion</a></li>
-          <li><a href="https://www.bbwdelight.com/" target="_blank">BBW Delight</a></li>
-          <li><a href="https://www.bbwattraction.com/" target="_blank">BBW Attraction</a></li>
-          <li><a href="https://www.bbwglamour.com/" target="_blank">BBW Glamour</a></li>
-          <li><a href="https://www.bbwdiva.com/" target="_blank">BBW Diva</a></li>
+          <li><a href="https://www.bbwseduction.com/" target="_blank" rel="noopener noreferrer">BBW Seduction</a></li>
+          <li><a href="https://www.bbwallure.com/" target="_blank" rel="noopener noreferrer">BBW Allure</a></li>
+          <li><a href="https://www.bbwfantasy.com/" target="_blank" rel="noopener noreferrer">BBW Fantasy</a></li>
+          <li><a href="https://www.bbwheaven.com/" target="_blank" rel="noopener noreferrer">BBW Heaven</a></li>
+          <li><a href="https://www.bbwcharm.com/" target="_blank" rel="noopener noreferrer">BBW Charm</a></li>
+          <li><a href="https://www.bbwpassion.com/" target="_blank" rel="noopener noreferrer">BBW Passion</a></li>
+          <li><a href="https://www.bbwdelight.com/" target="_blank" rel="noopener noreferrer">BBW Delight</a></li>
+          <li><a href="https://www.bbwattraction.com/" target="_blank" rel="noopener noreferrer">BBW Attraction</a></li>
+          <li><a href="https://www.bbwglamour.com/" target="_blank" rel="noopener noreferrer">BBW Glamour</a></li>
+          <li><a href="https://www.bbwdiva.com/" target="_blank" rel="noopener noreferrer">BBW Diva</a></li>
         </ol>
         <h2>BBW - Top 10 Videos</h2>
         <ol>
-          <li><a href="https://www.pornhub.com/categories/bbw" target="_blank">Pornhub BBW</a></li>
-          <li><a href="https://www.xvideos.com/tags/bbw" target="_blank">XVideos BBW</a></li>
-          <li><a href="https://www.youporn.com/tags/bbw/" target="_blank">YouPorn BBW</a></li>
-          <li><a href="https://www.redtube.com/search/bbw" target="_blank">Redtube BBW</a></li>
-          <li><a href="https://www.spankbang.com/tags/bbw" target="_blank">SpankBang BBW</a></li>
-          <li><a href="https://www.tnaflix.com/tags/bbw" target="_blank">Tnaflix BBW</a></li>
-          <li><a href="https://www.porn.com/search/bbw" target="_blank">Porn.com BBW</a></li>
-          <li><a href="https://www.xhamster.com/tags/bbw" target="_blank">xHamster BBW</a></li>
-          <li><a href="https://www.pornhd.com/categories/bbw" target="_blank">PornHD BBW</a></li>
-          <li><a href="https://www.tube8.com/search/bbw" target="_blank">Tube8 BBW</a></li>
+          <li><a href="https://www.pornhub.com/categories/bbw" target="_blank" rel="noopener noreferrer">Pornhub BBW</a></li>
+          <li><a href="https://www.xvideos.com/tags/bbw" target="_blank" rel="noopener noreferrer">XVideos BBW</a></li>
+          <li><a href="https://www.youporn.com/tags/bbw/" target="_blank" rel="noopener noreferrer">YouPorn BBW</a></li>
+          <li><a href="https://www.redtube.com/search/bbw" target="_blank" rel="noopener noreferrer">Redtube BBW</a></li>
+          <li><a href="https://www.spankbang.com/tags/bbw" target="_blank" rel="noopener noreferrer">SpankBang BBW</a></li>
+          <li><a href="https://www.tnaflix.com/tags/bbw" target="_blank" rel="noopener noreferrer">Tnaflix BBW</a></li>
+          <li><a href="https://www.porn.com/search/bbw" target="_blank" rel="noopener noreferrer">Porn.com BBW</a></li>
+          <li><a href="https://www.xhamster.com/tags/bbw" target="_blank" rel="noopener noreferrer">xHamster BBW</a></li>
+          <li><a href="https://www.pornhd.com/categories/bbw" target="_blank" rel="noopener noreferrer">PornHD BBW</a></li>
+          <li><a href="https://www.tube8.com/search/bbw" target="_blank" rel="noopener noreferrer">Tube8 BBW</a></li>
         </ol>
       </div>
-      <!-- Threesome Tab -->
+
+      <!-- Threesome Tab Content -->
       <div class="tab-pane fade" id="threesome" role="tabpanel" aria-labelledby="threesome-tab">
         <h2 class="mt-3">Threesome - Top 10 Websites</h2>
         <ol>
-          <li><a href="https://www.threesomeworld.com/" target="_blank">Threesome World</a></li>
-          <li><a href="https://www.threesomeheaven.com/" target="_blank">Threesome Heaven</a></li>
-          <li><a href="https://www.threesomehub.com/" target="_blank">Threesome Hub</a></li>
-          <li><a href="https://www.threesomepassion.com/" target="_blank">Threesome Passion</a></li>
-          <li><a href="https://www.threesomefantasy.com/" target="_blank">Threesome Fantasy</a></li>
-          <li><a href="https://www.threesometime.com/" target="_blank">Threesome Time</a></li>
-          <li><a href="https://www.threomedaily.com/" target="_blank">Threesome Daily</a></li>
-          <li><a href="https://www.tripleplayxxx.com/" target="_blank">TriplePlay</a></li>
-          <li><a href="https://www.threesome-now.com/" target="_blank">Threesome Now</a></li>
-          <li><a href="https://www.3some.com/" target="_blank">3some.com</a></li>
+          <li><a href="https://www.threesomeworld.com/" target="_blank" rel="noopener noreferrer">Threesome World</a></li>
+          <li><a href="https://www.threesomeheaven.com/" target="_blank" rel="noopener noreferrer">Threesome Heaven</a></li>
+          <li><a href="https://www.threesomehub.com/" target="_blank" rel="noopener noreferrer">Threesome Hub</a></li>
+          <li><a href="https://www.threesomepassion.com/" target="_blank" rel="noopener noreferrer">Threesome Passion</a></li>
+          <li><a href="https://www.threesomefantasy.com/" target="_blank" rel="noopener noreferrer">Threesome Fantasy</a></li>
+          <li><a href="https://www.threesometime.com/" target="_blank" rel="noopener noreferrer">Threesome Time</a></li>
+          <li><a href="https://www.threomedaily.com/" target="_blank" rel="noopener noreferrer">Threesome Daily</a></li>
+          <li><a href="https://www.tripleplayxxx.com/" target="_blank" rel="noopener noreferrer">TriplePlay</a></li>
+          <li><a href="https://www.threesome-now.com/" target="_blank" rel="noopener noreferrer">Threesome Now</a></li>
+          <li><a href="https://www.3some.com/" target="_blank" rel="noopener noreferrer">3some.com</a></li>
         </ol>
         <h2>Threesome - Top 10 Videos</h2>
         <ol>
-          <li><a href="https://www.pornhub.com/categories/threesome" target="_blank">Pornhub Threesome</a></li>
-          <li><a href="https://www.xvideos.com/tags/threesome" target="_blank">XVideos Threesome</a></li>
-          <li><a href="https://www.youporn.com/tags/threesome/" target="_blank">YouPorn Threesome</a></li>
-          <li><a href="https://www.redtube.com/search/threesome" target="_blank">Redtube Threesome</a></li>
-          <li><a href="https://www.spankbang.com/tags/threesome" target="_blank">SpankBang Threesome</a></li>
-          <li><a href="https://www.tnaflix.com/tags/threesome" target="_blank">Tnaflix Threesome</a></li>
-          <li><a href="https://www.porn.com/search/threesome" target="_blank">Porn.com Threesome</a></li>
-          <li><a href="https://www.xhamster.com/tags/threesome" target="_blank">xHamster Threesome</a></li>
-          <li><a href="https://www.pornhd.com/categories/threesome" target="_blank">PornHD Threesome</a></li>
-          <li><a href="https://www.tube8.com/search/threesome" target="_blank">Tube8 Threesome</a></li>
+          <li><a href="https://www.pornhub.com/categories/threesome" target="_blank" rel="noopener noreferrer">Pornhub Threesome</a></li>
+          <li><a href="https://www.xvideos.com/tags/threesome" target="_blank" rel="noopener noreferrer">XVideos Threesome</a></li>
+          <li><a href="https://www.youporn.com/tags/threesome/" target="_blank" rel="noopener noreferrer">YouPorn Threesome</a></li>
+          <li><a href="https://www.redtube.com/search/threesome" target="_blank" rel="noopener noreferrer">Redtube Threesome</a></li>
+          <li><a href="https://www.spankbang.com/tags/threesome" target="_blank" rel="noopener noreferrer">SpankBang Threesome</a></li>
+          <li><a href="https://www.tnaflix.com/tags/threesome" target="_blank" rel="noopener noreferrer">Tnaflix Threesome</a></li>
+          <li><a href="https://www.porn.com/search/threesome" target="_blank" rel="noopener noreferrer">Porn.com Threesome</a></li>
+          <li><a href="https://www.xhamster.com/tags/threesome" target="_blank" rel="noopener noreferrer">xHamster Threesome</a></li>
+          <li><a href="https://www.pornhd.com/categories/threesome" target="_blank" rel="noopener noreferrer">PornHD Threesome</a></li>
+          <li><a href="https://www.tube8.com/search/threesome" target="_blank" rel="noopener noreferrer">Tube8 Threesome</a></li>
         </ol>
       </div>
-      <!-- Orgasm Tab -->
+
+      <!-- Orgasm Tab Content -->
       <div class="tab-pane fade" id="orgasm" role="tabpanel" aria-labelledby="orgasm-tab">
         <h2 class="mt-3">Orgasm - Top 10 Websites</h2>
         <ol>
-          <li><a href="https://www.orgasmiczone.com/" target="_blank">Orgasmic Zone</a></li>
-          <li><a href="https://www.orgasmcentral.com/" target="_blank">Orgasm Central</a></li>
-          <li><a href="https://www.orgasmempire.com/" target="_blank">Orgasm Empire</a></li>
-          <li><a href="https://www.orgasmhaven.com/" target="_blank">Orgasm Haven</a></li>
-          <li><a href="https://www.orgasmpassion.com/" target="_blank">Orgasm Passion</a></li>
-          <li><a href="https://www.orgasmfantasy.com/" target="_blank">Orgasm Fantasy</a></li>
-          <li><a href="https://www.orgasmbliss.com/" target="_blank">Orgasm Bliss</a></li>
-          <li><a href="https://www.orgasmworld.com/" target="_blank">Orgasm World</a></li>
-          <li><a href="https://www.theorgasmspot.com/" target="_blank">The Orgasm Spot</a></li>
-          <li><a href="https://www.orgasmx.com/" target="_blank">Orgasm X</a></li>
+          <li><a href="https://www.orgasmiczone.com/" target="_blank" rel="noopener noreferrer">Orgasmic Zone</a></li>
+          <li><a href="https://www.orgasmcentral.com/" target="_blank" rel="noopener noreferrer">Orgasm Central</a></li>
+          <li><a href="https://www.orgasmempire.com/" target="_blank" rel="noopener noreferrer">Orgasm Empire</a></li>
+          <li><a href="https://www.orgasmhaven.com/" target="_blank" rel="noopener noreferrer">Orgasm Haven</a></li>
+          <li><a href="https://www.orgasmpassion.com/" target="_blank" rel="noopener noreferrer">Orgasm Passion</a></li>
+          <li><a href="https://www.orgasmfantasy.com/" target="_blank" rel="noopener noreferrer">Orgasm Fantasy</a></li>
+          <li><a href="https://www.orgasmbliss.com/" target="_blank" rel="noopener noreferrer">Orgasm Bliss</a></li>
+          <li><a href="https://www.orgasmworld.com/" target="_blank" rel="noopener noreferrer">Orgasm World</a></li>
+          <li><a href="https://www.theorgasmspot.com/" target="_blank" rel="noopener noreferrer">The Orgasm Spot</a></li>
+          <li><a href="https://www.orgasmx.com/" target="_blank" rel="noopener noreferrer">Orgasm X</a></li>
         </ol>
         <h2>Orgasm - Top 10 Videos</h2>
         <ol>
-          <li><a href="https://www.pornhub.com/categories/orgasm" target="_blank">Pornhub Orgasm</a></li>
-          <li><a href="https://www.xvideos.com/tags/orgasm" target="_blank">XVideos Orgasm</a></li>
-          <li><a href="https://www.youporn.com/tags/orgasm/" target="_blank">YouPorn Orgasm</a></li>
-          <li><a href="https://www.redtube.com/search/orgasm" target="_blank">Redtube Orgasm</a></li>
-          <li><a href="https://www.spankbang.com/tags/orgasm" target="_blank">SpankBang Orgasm</a></li>
-          <li><a href="https://www.tnaflix.com/tags/orgasm" target="_blank">Tnaflix Orgasm</a></li>
-          <li><a href="https://www.porn.com/search/orgasm" target="_blank">Porn.com Orgasm</a></li>
-          <li><a href="https://www.xhamster.com/tags/orgasm" target="_blank">xHamster Orgasm</a></li>
-          <li><a href="https://www.pornhd.com/categories/orgasm" target="_blank">PornHD Orgasm</a></li>
-          <li><a href="https://www.tube8.com/search/orgasm" target="_blank">Tube8 Orgasm</a></li>
+          <li><a href="https://www.pornhub.com/categories/orgasm" target="_blank" rel="noopener noreferrer">Pornhub Orgasm</a></li>
+          <li><a href="https://www.xvideos.com/tags/orgasm" target="_blank" rel="noopener noreferrer">XVideos Orgasm</a></li>
+          <li><a href="https://www.youporn.com/tags/orgasm/" target="_blank" rel="noopener noreferrer">YouPorn Orgasm</a></li>
+          <li><a href="https://www.redtube.com/search/orgasm" target="_blank" rel="noopener noreferrer">Redtube Orgasm</a></li>
+          <li><a href="https://www.spankbang.com/tags/orgasm" target="_blank" rel="noopener noreferrer">SpankBang Orgasm</a></li>
+          <li><a href="https://www.tnaflix.com/tags/orgasm" target="_blank" rel="noopener noreferrer">Tnaflix Orgasm</a></li>
+          <li><a href="https://www.porn.com/search/orgasm" target="_blank" rel="noopener noreferrer">Porn.com Orgasm</a></li>
+          <li><a href="https://www.xhamster.com/tags/orgasm" target="_blank" rel="noopener noreferrer">xHamster Orgasm</a></li>
+          <li><a href="https://www.pornhd.com/categories/orgasm" target="_blank" rel="noopener noreferrer">PornHD Orgasm</a></li>
+          <li><a href="https://www.tube8.com/search/orgasm" target="_blank" rel="noopener noreferrer">Tube8 Orgasm</a></li>
         </ol>
       </div>
-      <!-- Amateur Tab -->
+
+      <!-- Amateur Tab Content -->
       <div class="tab-pane fade" id="amateur" role="tabpanel" aria-labelledby="amateur-tab">
         <h2 class="mt-3">Amateur - Top 10 Websites</h2>
         <ol>
-          <li><a href="https://www.amateurallure.com/" target="_blank">Amateur Allure</a></li>
-          <li><a href="https://www.amateurpass.com/" target="_blank">Amateur Pass</a></li>
-          <li><a href="https://www.amateurempire.com/" target="_blank">Amateur Empire</a></li>
-          <li><a href="https://www.amateurheaven.com/" target="_blank">Amateur Heaven</a></li>
-          <li><a href="https://www.amateurworld.com/" target="_blank">Amateur World</a></li>
-          <li><a href="https://www.amateurdesire.com/" target="_blank">Amateur Desire</a></li>
-          <li><a href="https://www.amateurseduction.com/" target="_blank">Amateur Seduction</a></li>
-          <li><a href="https://www.amateurzone.com/" target="_blank">Amateur Zone</a></li>
-          <li><a href="https://www.amateurlife.com/" target="_blank">Amateur Life</a></li>
-          <li><a href="https://www.amateurhot.com/" target="_blank">Amateur Hot</a></li>
+          <li><a href="https://www.amateurallure.com/" target="_blank" rel="noopener noreferrer">Amateur Allure</a></li>
+          <li><a href="https://www.amateurpass.com/" target="_blank" rel="noopener noreferrer">Amateur Pass</a></li>
+          <li><a href="https://www.amateurempire.com/" target="_blank" rel="noopener noreferrer">Amateur Empire</a></li>
+          <li><a href="https://www.amateurheaven.com/" target="_blank" rel="noopener noreferrer">Amateur Heaven</a></li>
+          <li><a href="https://www.amateurworld.com/" target="_blank" rel="noopener noreferrer">Amateur World</a></li>
+          <li><a href="https://www.amateurdesire.com/" target="_blank" rel="noopener noreferrer">Amateur Desire</a></li>
+          <li><a href="https://www.amateurseduction.com/" target="_blank" rel="noopener noreferrer">Amateur Seduction</a></li>
+          <li><a href="https://www.amateurzone.com/" target="_blank" rel="noopener noreferrer">Amateur Zone</a></li>
+          <li><a href="https://www.amateurlife.com/" target="_blank" rel="noopener noreferrer">Amateur Life</a></li>
+          <li><a href="https://www.amateurhot.com/" target="_blank" rel="noopener noreferrer">Amateur Hot</a></li>
         </ol>
         <h2>Amateur - Top 10 Videos</h2>
         <ol>
-          <li><a href="https://www.pornhub.com/categories/amateur" target="_blank">Pornhub Amateur</a></li>
-          <li><a href="https://www.xvideos.com/tags/amateur" target="_blank">XVideos Amateur</a></li>
-          <li><a href="https://www.youporn.com/tags/amateur/" target="_blank">YouPorn Amateur</a></li>
-          <li><a href="https://www.redtube.com/search/amateur" target="_blank">Redtube Amateur</a></li>
-          <li><a href="https://www.spankbang.com/tags/amateur" target="_blank">SpankBang Amateur</a></li>
-          <li><a href="https://www.tnaflix.com/tags/amateur" target="_blank">Tnaflix Amateur</a></li>
-          <li><a href="https://www.porn.com/search/amateur" target="_blank">Porn.com Amateur</a></li>
-          <li><a href="https://www.xhamster.com/tags/amateur" target="_blank">xHamster Amateur</a></li>
-          <li><a href="https://www.pornhd.com/categories/amateur" target="_blank">PornHD Amateur</a></li>
-          <li><a href="https://www.tube8.com/search/amateur" target="_blank">Tube8 Amateur</a></li>
+          <li><a href="https://www.pornhub.com/categories/amateur" target="_blank" rel="noopener noreferrer">Pornhub Amateur</a></li>
+          <li><a href="https://www.xvideos.com/tags/amateur" target="_blank" rel="noopener noreferrer">XVideos Amateur</a></li>
+          <li><a href="https://www.youporn.com/tags/amateur/" target="_blank" rel="noopener noreferrer">YouPorn Amateur</a></li>
+          <li><a href="https://www.redtube.com/search/amateur" target="_blank" rel="noopener noreferrer">Redtube Amateur</a></li>
+          <li><a href="https://www.spankbang.com/tags/amateur" target="_blank" rel="noopener noreferrer">SpankBang Amateur</a></li>
+          <li><a href="https://www.tnaflix.com/tags/amateur" target="_blank" rel="noopener noreferrer">Tnaflix Amateur</a></li>
+          <li><a href="https://www.porn.com/search/amateur" target="_blank" rel="noopener noreferrer">Porn.com Amateur</a></li>
+          <li><a href="https://www.xhamster.com/tags/amateur" target="_blank" rel="noopener noreferrer">xHamster Amateur</a></li>
+          <li><a href="https://www.pornhd.com/categories/amateur" target="_blank" rel="noopener noreferrer">PornHD Amateur</a></li>
+          <li><a href="https://www.tube8.com/search/amateur" target="_blank" rel="noopener noreferrer">Tube8 Amateur</a></li>
         </ol>
       </div>
-    <!-- South African Porn Tab -->
+
+      <!-- SA Porn Tab Content -->
       <div class="tab-pane fade" id="saporn" role="tabpanel" aria-labelledby="saporn-tab">
         <h2 class="mt-3">South African Porn - Top 10 Sites</h2>
         <ol>
-          <li><a href="https://www.southafricanporn.com/" target="_blank">SouthAfricanPorn.com</a></li>
-          <li><a href="https://www.afroporntv.com/" target="_blank">AfroPornTV.com</a></li>
-          <li><a href="https://www.africanxxx.com/" target="_blank">AfricanXXX.com</a></li>
-          <li><a href="https://www.afrosextube.com/" target="_blank">AfroSexTube.com</a></li>
-          <li><a href="https://www.capeporn.com/" target="_blank">CapePorn.com</a></li>
-          <li><a href="https://www.joburgxxx.com/" target="_blank">JoburgXXX.com</a></li>
-          <li><a href="https://www.dirtysouthxxx.com/" target="_blank">DirtySouthXXX.com</a></li>
-          <li><a href="https://xpornza.com/" target="_blank">XpornZA.com</a></li>
-          <li><a href="https://www.saadultnetwork.com/" target="_blank">SAAdultNetwork.com</a></li>
-          <li><a href="https://www.mzansixxx.com/" target="_blank">MzansiXXX.com</a></li>
+          <li><a href="https://www.southafricanporn.com/" target="_blank" rel="noopener noreferrer">SouthAfricanPorn.com</a></li>
+          <li><a href="https://www.afroporntv.com/" target="_blank" rel="noopener noreferrer">AfroPornTV.com</a></li>
+          <li><a href="https://www.africanxxx.com/" target="_blank" rel="noopener noreferrer">AfricanXXX.com</a></li>
+          <li><a href="https://www.afrosextube.com/" target="_blank" rel="noopener noreferrer">AfroSexTube.com</a></li>
+          <li><a href="https://www.capeporn.com/" target="_blank" rel="noopener noreferrer">CapePorn.com</a></li>
+          <li><a href="https://www.joburgxxx.com/" target="_blank" rel="noopener noreferrer">JoburgXXX.com</a></li>
+          <li><a href="https://www.dirtysouthxxx.com/" target="_blank" rel="noopener noreferrer">DirtySouthXXX.com</a></li>
+          <li><a href="https://xpornza.com/" target="_blank" rel="noopener noreferrer">XpornZA.com</a></li>
+          <li><a href="https://www.saadultnetwork.com/" target="_blank" rel="noopener noreferrer">SAAdultNetwork.com</a></li>
+          <li><a href="https://www.mzansixxx.com/" target="_blank" rel="noopener noreferrer">MzansiXXX.com</a></li>
         </ol>
       </div>
     </div>
+    <!-- End of Tab Content Panels -->
   </main>
 
-  <!-- Footer -->
+  <!-- Footer Section -->
   <footer class="bg-dark text-white text-center py-4">
     <p>&copy; 2025 TopShottaxxx - All rights reserved. 18+ Only</p>
-    <div class="row justify-content-center">
-      <a href="terms.html" class="text-white text-decoration-none mx-2">Terms of Service</a>
-      <a href="privacy.html" class="text-white text-decoration-none mx-2">Privacy Policy</a>
-      <a href="report.html" class="text-white text-decoration-none mx-2">Report Content</a>
     </div>
   </footer>
 
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <!-- JavaScript: Bootstrap and Custom Scripts -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
   <script>
-    $(document).ready(() => {
-      // Check if user has been verified
-      const ageVerified = localStorage.getItem('ageVerified');
-      if (!ageVerified) {
-        $('#ageVerification').modal('show');
+    document.addEventListener('DOMContentLoaded', () => {
+      const mainContent = document.getElementById('mainContent');
+      const ageForm = document.getElementById('ageForm');
+      const dobInput = document.getElementById('dobInput');
+      const termsCheck = document.getElementById('termsCheck');
+      const errorMsg = document.getElementById('errorMsg');
+      const exitBtn = document.getElementById('exitBtn');
+
+      // Initialize the Bootstrap modal
+      const ageModalElement = document.getElementById('ageVerification');
+      const ageModal = new bootstrap.Modal(ageModalElement);
+
+      // If age has not been verified before, show the modal
+      if (localStorage.getItem('ageVerified') !== 'true') {
+        ageModal.show();
+      } else {
+        mainContent.classList.remove('d-none');
       }
-      // Handle age verification submission
-      $('#ageForm').submit(e => {
+
+      // Exit button redirect
+      exitBtn.addEventListener('click', () => {
+        window.location.href = "about:blank";
+      });
+
+      // Handle age verification form submission
+      ageForm.addEventListener('submit', (e) => {
         e.preventDefault();
-        const dob = new Date($('#dobInput').val());
+        errorMsg.style.display = 'none';
+        const dobValue = dobInput.value;
+        if (!dobValue) {
+          errorMsg.textContent = 'Please enter your date of birth.';
+          errorMsg.style.display = 'block';
+          return;
+        }
+        const dob = new Date(dobValue);
         const today = new Date();
         let age = today.getFullYear() - dob.getFullYear();
         const monthDiff = today.getMonth() - dob.getMonth();
         if (monthDiff < 0 || (monthDiff === 0 && today.getDate() < dob.getDate())) {
           age--;
         }
-        if (age >= 18 && $('#termsCheck').is(':checked')) {
+        if (age >= 18 && termsCheck.checked) {
           localStorage.setItem('ageVerified', 'true');
-          $('#ageVerification').modal('hide');
-          $('#mainContent').removeClass('d-none');
+          ageModal.hide();
+          mainContent.classList.remove('d-none');
         } else {
-          alert('You must be 18+ and agree to the terms to access this site.');
+          errorMsg.textContent = 'You must be 18+ and agree to the terms to access this site.';
+          errorMsg.style.display = 'block';
         }
       });
     });
