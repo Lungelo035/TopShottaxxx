@@ -80,21 +80,27 @@
       padding: 1rem 0;
     }
 
-    /* Smooth Scroll */
+    /* Ensure content fits within viewport */
+    .container {
+      max-width: 100%;
+      overflow-x: hidden;
+    }
+
+    /* Remove smooth scroll behavior */
     html {
-      scroll-behavior: smooth;
+      scroll-behavior: auto;
     }
   </style>
 </head>
 <body>
   <!-- Ad Container (Top Ad) -->
- <script async="async" data-cfasync="false" src="//pl25962461.effectiveratecpm.com/f3decab2180b9fe7eecbf1f1cdb63c29/invoke.js"></script>
-<div id="container-f3decab2180b9fe7eecbf1f1cdb63c29"></div>
+    <script type='text/javascript' src='//pl25957094.effectiveratecpm.com/e3/2d/e1/e32de133a36a227ad84b0b2316d1755d.js'></script>
+  </div>
 
   <!-- Header Section -->
   <header>
     <h1>TopShottaxxx</h1>
-    <p>porn. sex. lust. horny. milf. mzansi. ama2000. </p>
+    <p>Age-Restricted Adult Content Platform</p>
   </header>
 
   <!-- Floating Video (Fixed Position) -->
@@ -126,60 +132,71 @@
     </p>
   </div>
 
-  <!-- Main Content (hidden until age verification) -->
-  <main class="container d-none" id="mainContent">
+  <!-- Main Content -->
+  <main class="container">
     <!-- Navigation Tabs -->
     <ul class="nav nav-tabs" id="categoryTabs" role="tablist">
+      <!-- Hentai Tab -->
       <li class="nav-item" role="presentation">
         <button class="nav-link active" id="hentai-tab" data-bs-toggle="tab" data-bs-target="#hentai" type="button" role="tab" aria-controls="hentai" aria-selected="true">
           Hentai
         </button>
       </li>
+      <!-- MILF Tab -->
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="milf-tab" data-bs-toggle="tab" data-bs-target="#milf" type="button" role="tab" aria-controls="milf" aria-selected="false">
           MILF
         </button>
       </li>
+      <!-- Lesbian Tab -->
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="lesbian-tab" data-bs-toggle="tab" data-bs-target="#lesbian" type="button" role="tab" aria-controls="lesbian" aria-selected="false">
           Lesbian
         </button>
       </li>
+      <!-- Anal Tab -->
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="anal-tab" data-bs-toggle="tab" data-bs-target="#anal" type="button" role="tab" aria-controls="anal" aria-selected="false">
           Anal
         </button>
       </li>
+      <!-- Gay Tab -->
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="gay-tab" data-bs-toggle="tab" data-bs-target="#gay" type="button" role="tab" aria-controls="gay" aria-selected="false">
           Gay
         </button>
       </li>
+      <!-- Trans Tab -->
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="trans-tab" data-bs-toggle="tab" data-bs-target="#trans" type="button" role="tab" aria-controls="trans" aria-selected="false">
           Trans
         </button>
       </li>
+      <!-- BBW Tab -->
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="bbw-tab" data-bs-toggle="tab" data-bs-target="#bbw" type="button" role="tab" aria-controls="bbw" aria-selected="false">
           BBW
         </button>
       </li>
+      <!-- Threesome Tab -->
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="threesome-tab" data-bs-toggle="tab" data-bs-target="#threesome" type="button" role="tab" aria-controls="threesome" aria-selected="false">
           Threesome
         </button>
       </li>
+      <!-- Orgasm Tab -->
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="orgasm-tab" data-bs-toggle="tab" data-bs-target="#orgasm" type="button" role="tab" aria-controls="orgasm" aria-selected="false">
           Orgasm
         </button>
       </li>
+      <!-- Amateur Tab -->
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="amateur-tab" data-bs-toggle="tab" data-bs-target="#amateur" type="button" role="tab" aria-controls="amateur" aria-selected="false">
           Amateur
         </button>
       </li>
+      <!-- SA Porn Tab -->
       <li class="nav-item" role="presentation">
         <button class="nav-link" id="saporn-tab" data-bs-toggle="tab" data-bs-target="#saporn" type="button" role="tab" aria-controls="saporn" aria-selected="false">
           SA Porn
@@ -509,33 +526,16 @@
     <!-- End of Tab Content Panels -->
   </main>
 
-  <script async="async" data-cfasync="false" src="//pl25962461.effectiveratecpm.com/f3decab2180b9fe7eecbf1f1cdb63c29/invoke.js"></script>
-<div id="container-f3decab2180b9fe7eecbf1f1cdb63c29"></div>
   <!-- Footer Section -->
   <footer class="text-center py-3">
     <p>&copy; 2025 TopShottaxxx - All rights reserved. 18+ Only</p>
   </footer>
 
-  <!-- Auto-Scroll Script -->
+  <!-- Bootstrap Script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Fetch and populate feed data -->
   <script>
-    document.addEventListener('DOMContentLoaded', () => {
-      // Smooth auto-scroll over 60 seconds
-      const scrollDuration = 60000; // 60 seconds
-      const scrollHeight = document.documentElement.scrollHeight - window.innerHeight;
-      const scrollStep = scrollHeight / (scrollDuration / 16); // 16ms per frame
-
-      let scrollPosition = 0;
-      const scrollInterval = setInterval(() => {
-        scrollPosition += scrollStep;
-        window.scrollTo(0, scrollPosition);
-
-        if (scrollPosition >= scrollHeight) {
-          clearInterval(scrollInterval);
-        }
-      }, 16);
-    });
-
-    // Fetch and populate feed data
     const feedUrl = 'https://txxx.com/admin/feeds/embed/?source=835318306&feed_format=csv&screenshot_format=288x162&limit=100&csv_separator=%7C&csv_columns=embed';
     fetch(feedUrl)
       .then(response => response.text())
@@ -558,8 +558,5 @@
       })
       .catch(error => console.error('Error fetching feed:', error));
   </script>
-
-  <!-- Bootstrap Script -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
